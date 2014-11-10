@@ -1,0 +1,13 @@
+<h1>Boy, look at all these dope products!</h1>
+<%= link_to "Add a product", "/products/new" %>
+
+<p>
+
+<%= @products.each do |product| %>
+	<h3><%= product[:name]%> </h3>
+	<br>
+	<p><%= product[:description] %> </p>
+	<%= link_to "View Product Page", "/products/#{product.id}" %>
+	<% end %>
+
+
