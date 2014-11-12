@@ -1,10 +1,10 @@
 <h1>Edit Product</h1>
 
 <p>
-	<%= link_to "Back", @product %>
+	<%= link_to "Back", $product %>
 </p>
 
-<%= form_for @product do |p| %>
+<%= form_for $product do |p| %>
 	<p>
 		<%= p.label "name" %><br>
 		<%= p.text_field "name" %>
